@@ -23,10 +23,8 @@ describe('DefaultTest', () => {
         "browserstack.local": "false",
         "browserstack.debug": "true",
         "browserstack.selenium_version": "4.0.0-alpha-1",
-        'browserstack.local': 'true',
         'browserstack.localIdentifier': process.env.BROWSERSTACK_LOCAL_IDENTIFIER,
         'acceptSslCerts': 'true'
-
     }
 
 
