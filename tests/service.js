@@ -15,11 +15,14 @@ describe('DefaultTest', () => {
 
     let driver;
     let capabilities = {
-        'browserName': 'Chrome',
-        'browser_version': '80.0 beta',
-        'os': 'Windows',
-        'os_version': '10',
-        'resolution': '1024x768',
+        "os": "Windows",
+        "os_version": "10",
+        "browserName": "Chrome",
+        "browser_version": "80.0 beta",
+        "project": "Service",
+        "browserstack.local": "false",
+        "browserstack.debug": "true",
+        "browserstack.selenium_version": "4.0.0-alpha-1",
         'browserstack.local': 'true',
         'browserstack.localIdentifier': 'BROWSERSTACK_LOCAL_IDENTIFIER'
     }
