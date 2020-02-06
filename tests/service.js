@@ -14,10 +14,23 @@ const {
 describe('DefaultTest', () => {
 
     let driver;
-    let eyes;
+    let capabilities = {
+        'browserName': 'Chrome',
+        'browser_version': '80.0 beta',
+        'os': 'Windows',
+        'os_version': '10',
+        'resolution': '1024x768',
+        'browserstack.local': 'true',
+        'browserstack.localIdentifier': 'BROWSERSTACK_LOCAL_IDENTIFIER'
+    }
+
+
 
     beforeEach(async () => {
-        driver = await new Builder().forBrowser('chrome').build();
+        driver = new webdriver.Builder().
+        usingServer('http://hub-cloud.browserstack.com/wd/hub').
+        withCapabilities(capabilities).
+        build();
     })
 
     it('Just testing flow for selenium in SB company', async () => {
