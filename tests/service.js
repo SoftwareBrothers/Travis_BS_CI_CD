@@ -15,6 +15,8 @@ describe('DefaultTest', () => {
     let driver;
 
     let capabilities = {
+        'browserstack.user': process.env.BROWSERSTACK_USERNAME,
+        'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY,
         "os": "Windows",
         "os_version": "10",
         "browserName": "Chrome",
