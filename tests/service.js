@@ -30,7 +30,7 @@ describe('DefaultTest', () => {
 
 
     beforeEach(async () => {
-        driver = new webdriver.Builder().
+        return driver = new webdriver.Builder().
         usingServer('http://hub-cloud.browserstack.com/wd/hub').
         withCapabilities(capabilities).
         build();
