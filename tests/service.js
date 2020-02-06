@@ -3,17 +3,17 @@ const {
     By,
     Key,
     until,
-    WebDriver,
     Capabilities
 } = require('selenium-webdriver');
+const webdriver = require('selenium-webdriver');
 const {
     expect
 } = require('chai');
 
 
 describe('DefaultTest', () => {
-
     let driver;
+
     let capabilities = {
         "os": "Windows",
         "os_version": "10",
@@ -30,7 +30,7 @@ describe('DefaultTest', () => {
 
 
     beforeEach(async () => {
-        return driver = new webdriver.Builder().
+        driver = new webdriver.Builder().
         usingServer('http://hub-cloud.browserstack.com/wd/hub').
         withCapabilities(capabilities).
         build();
