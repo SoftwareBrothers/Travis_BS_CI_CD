@@ -25,9 +25,9 @@ let capabilities = [{
         'browserstack.localIdentifier': process.env.BROWSERSTACK_LOCAL_IDENTIFIER,
     }, {
         "os": "OS X",
-        "os_version": "Catalina",
+        "os_version": "High Sierra",
         "browserName": "Safari",
-        "browser_version": "13.0",
+        "browser_version": "11.0",
         "project": "Service",
         "browserstack.local": "false",
         "browserstack.selenium_version": "3.5.2",
