@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha tests --timeout 60000 --reporter",
-    "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
+    "test": "node_modules/.bin/mocha tests --timeout 60000"
   },
   "keywords": [],
   "author": "",
