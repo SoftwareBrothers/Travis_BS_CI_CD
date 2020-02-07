@@ -1,0 +1,444 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-02-07T09:26:31.171Z",
+    "end": "2020-02-07T09:27:18.869Z",
+    "duration": 47698,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "daa726fa-881e-41a9-8481-21f9218e4ac6",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1c6c4bb3-61a2-4730-9b45-3eb72a0d5f5e",
+          "title": "",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "29dd7194-8169-4ab6-8c94-047caceac8ee",
+              "title": "DefaultTest",
+              "fullFile": "/Users/admin/Desktop/projects/travis_browserstack/tests/service.js",
+              "file": "/tests/service.js",
+              "beforeHooks": [
+                {
+                  "title": "\"before each\" hook",
+                  "fullTitle": " DefaultTest \"before each\" hook",
+                  "timedOut": false,
+                  "duration": 1556,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// driver = new webdriver.Builder().\n// usingServer('http://hub-cloud.browserstack.com/wd/hub').\n// withCapabilities(capabilities).\n// build();\n//local testing\ndriver = await new Builder().forBrowser('chrome').build();",
+                  "err": {},
+                  "uuid": "f4add3f4-b18e-4b84-9eab-76fca605fbb2",
+                  "parentUUID": "29dd7194-8169-4ab6-8c94-047caceac8ee",
+                  "isHook": true,
+                  "skipped": false
+                }
+              ],
+              "afterHooks": [
+                {
+                  "title": "\"after each\" hook",
+                  "fullTitle": " DefaultTest \"after each\" hook",
+                  "timedOut": false,
+                  "duration": 55,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "await driver.quit();",
+                  "err": {},
+                  "uuid": "ea868b40-f0c3-4474-857b-5f01739c1ba2",
+                  "parentUUID": "29dd7194-8169-4ab6-8c94-047caceac8ee",
+                  "isHook": true,
+                  "skipped": false
+                }
+              ],
+              "tests": [
+                {
+                  "title": "Just testing flow for selenium in SB company",
+                  "fullTitle": " DefaultTest Just testing flow for selenium in SB company",
+                  "timedOut": false,
+                  "duration": 20425,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "await driver.manage().window().maximize();\nawait driver.get('https://softwarebrothers.co/');\nawait driver.findElement(By.linkText(\"Services\")).click();\nawait driver.sleep(5000);\nawait driver.wait(until.elementIsVisible(driver.findElement(By.xpath(\"//a[@aria-label= 'dismiss cookie message' and @role='button']\")))).click();\nawait driver.sleep(5000);\nawait driver.findElement(By.className((\"webdev\"))).click();\nawait driver.sleep(5000);\nconst title = await (await driver.findElement(By.xpath(\"//*[text()='Web Design and Development']\"))).getText();\nexpect(title.toUpperCase()).to.have.string('WEB DESIGN AND DEVELOPMENT');",
+                  "err": {},
+                  "uuid": "401aed6b-de2c-4b07-a8ab-67a76dc5dee1",
+                  "parentUUID": "29dd7194-8169-4ab6-8c94-047caceac8ee",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "401aed6b-de2c-4b07-a8ab-67a76dc5dee1"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 20425,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 30000
+            },
+            {
+              "uuid": "172c9051-b2e9-4341-bc26-52762f492b90",
+              "title": "DefaultTest",
+              "fullFile": "/Users/admin/Desktop/projects/travis_browserstack/tests/service.js",
+              "file": "/tests/service.js",
+              "beforeHooks": [
+                {
+                  "title": "\"before each\" hook",
+                  "fullTitle": " DefaultTest \"before each\" hook",
+                  "timedOut": false,
+                  "duration": 1244,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// driver = new webdriver.Builder().\n// usingServer('http://hub-cloud.browserstack.com/wd/hub').\n// withCapabilities(capabilities).\n// build();\n//local testing\ndriver = await new Builder().forBrowser('chrome').build();",
+                  "err": {},
+                  "uuid": "a8777ed6-1167-476f-a305-73ce528cfdf7",
+                  "parentUUID": "172c9051-b2e9-4341-bc26-52762f492b90",
+                  "isHook": true,
+                  "skipped": false
+                }
+              ],
+              "afterHooks": [
+                {
+                  "title": "\"after each\" hook",
+                  "fullTitle": " DefaultTest \"after each\" hook",
+                  "timedOut": false,
+                  "duration": 52,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "await driver.quit();",
+                  "err": {},
+                  "uuid": "c3110935-0e71-4f4b-b28a-20e532b76828",
+                  "parentUUID": "172c9051-b2e9-4341-bc26-52762f492b90",
+                  "isHook": true,
+                  "skipped": false
+                }
+              ],
+              "tests": [
+                {
+                  "title": "Just testing flow for selenium in SB company",
+                  "fullTitle": " DefaultTest Just testing flow for selenium in SB company",
+                  "timedOut": false,
+                  "duration": 19763,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "await driver.manage().window().maximize();\nawait driver.get('https://softwarebrothers.co/');\nawait driver.findElement(By.linkText(\"Services\")).click();\nawait driver.sleep(5000);\nawait driver.wait(until.elementIsVisible(driver.findElement(By.xpath(\"//a[@aria-label= 'dismiss cookie message' and @role='button']\")))).click();\nawait driver.sleep(5000);\nawait driver.findElement(By.className((\"webdev\"))).click();\nawait driver.sleep(5000);\nconst title = await (await driver.findElement(By.xpath(\"//*[text()='Web Design and Development']\"))).getText();\nexpect(title.toUpperCase()).to.have.string('WEB DESIGN AND DEVELOPMENT');",
+                  "err": {},
+                  "uuid": "70f601d3-2377-483a-912a-47d9b047d1b8",
+                  "parentUUID": "172c9051-b2e9-4341-bc26-52762f492b90",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "70f601d3-2377-483a-912a-47d9b047d1b8"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 19763,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 30000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "8f7e7fa0-60f7-4729-a8ec-599ab1abd822",
+          "title": "",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "281f8141-1936-4206-adfe-480174348f66",
+              "title": "DefaultTest",
+              "fullFile": "/Users/admin/Desktop/projects/travis_browserstack/tests/serviceParallel.js",
+              "file": "/tests/serviceParallel.js",
+              "beforeHooks": [
+                {
+                  "title": "\"before each\" hook",
+                  "fullTitle": " DefaultTest \"before each\" hook",
+                  "timedOut": false,
+                  "duration": 1119,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// driver = new webdriver.Builder().\n// usingServer('http://hub-cloud.browserstack.com/wd/hub').\n// withCapabilities(capabilities).\n// build();\n//local testing\ndriver = await new Builder().forBrowser(system).build();",
+                  "err": {},
+                  "uuid": "ba4a8f57-8d32-48f7-aa80-d17223ff7066",
+                  "parentUUID": "281f8141-1936-4206-adfe-480174348f66",
+                  "isHook": true,
+                  "skipped": false
+                }
+              ],
+              "afterHooks": [
+                {
+                  "title": "\"after each\" hook",
+                  "fullTitle": " DefaultTest \"after each\" hook",
+                  "timedOut": false,
+                  "duration": 53,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "await driver.quit();",
+                  "err": {},
+                  "uuid": "32a6f5b3-9443-4272-8da5-bbd3683ad99a",
+                  "parentUUID": "281f8141-1936-4206-adfe-480174348f66",
+                  "isHook": true,
+                  "skipped": false
+                }
+              ],
+              "tests": [
+                {
+                  "title": "Just testing flow for selenium in SB company",
+                  "fullTitle": " DefaultTest Just testing flow for selenium in SB company",
+                  "timedOut": false,
+                  "duration": 10997,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "await driver.manage().window().maximize();\nawait driver.get('https://softwarebrothers.co/');\nawait driver.findElement(By.linkText(\"Services\")).click();\nawait driver.sleep(2000);\nawait driver.wait(until.elementIsVisible(driver.findElement(By.xpath(\"//a[@aria-label= 'dismiss cookie message' and @role='button']\")))).click();\nawait driver.sleep(2000);\nawait driver.findElement(By.className((\"webdev\"))).click();\nawait driver.sleep(2000);\nconst title = await (await driver.findElement(By.xpath(\"//*[text()='Web Design and Development']\"))).getText();\nexpect(title.toUpperCase()).to.have.string('WEB DESIGN AND DEVELOPMENT');",
+                  "err": {},
+                  "uuid": "e5065900-c7a1-4fc8-9327-b2fb6fcba937",
+                  "parentUUID": "281f8141-1936-4206-adfe-480174348f66",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Just testing flow for selenium in SB company",
+                  "fullTitle": " DefaultTest Just testing flow for selenium in SB company",
+                  "timedOut": false,
+                  "duration": 9110,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "await driver.manage().window().maximize();\nawait driver.get('https://softwarebrothers.co/');\nawait driver.findElement(By.linkText(\"Services\")).click();\nawait driver.sleep(2000);\nawait driver.wait(until.elementIsVisible(driver.findElement(By.xpath(\"//a[@aria-label= 'dismiss cookie message' and @role='button']\")))).click();\nawait driver.sleep(2000);\nawait driver.findElement(By.className((\"webdev\"))).click();\nawait driver.sleep(2000);\nconst title = await (await driver.findElement(By.xpath(\"//*[text()='Web Design and Development']\"))).getText();\nexpect(title.toUpperCase()).to.have.string('WEB DESIGN AND DEVELOPMENT');",
+                  "err": {},
+                  "uuid": "ffcd0c42-cf7a-4ed0-bd90-01e53a0dedab",
+                  "parentUUID": "281f8141-1936-4206-adfe-480174348f66",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "e5065900-c7a1-4fc8-9327-b2fb6fcba937",
+                "ffcd0c42-cf7a-4ed0-bd90-01e53a0dedab"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 20107,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 30000
+            },
+            {
+              "uuid": "69666b70-ab97-4308-8942-36bf74ff51af",
+              "title": "DefaultTest",
+              "fullFile": "/Users/admin/Desktop/projects/travis_browserstack/tests/serviceParallel.js",
+              "file": "/tests/serviceParallel.js",
+              "beforeHooks": [
+                {
+                  "title": "\"before each\" hook",
+                  "fullTitle": " DefaultTest \"before each\" hook",
+                  "timedOut": false,
+                  "duration": 834,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// driver = new webdriver.Builder().\n// usingServer('http://hub-cloud.browserstack.com/wd/hub').\n// withCapabilities(capabilities).\n// build();\n//local testing\ndriver = await new Builder().forBrowser(system).build();",
+                  "err": {},
+                  "uuid": "8f991e36-d64c-4faa-93d4-0cf207ab26d6",
+                  "parentUUID": "69666b70-ab97-4308-8942-36bf74ff51af",
+                  "isHook": true,
+                  "skipped": false
+                }
+              ],
+              "afterHooks": [
+                {
+                  "title": "\"after each\" hook",
+                  "fullTitle": " DefaultTest \"after each\" hook",
+                  "timedOut": false,
+                  "duration": 36,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "await driver.quit();",
+                  "err": {},
+                  "uuid": "316ca056-186c-42c8-9d61-53cd1efdeabf",
+                  "parentUUID": "69666b70-ab97-4308-8942-36bf74ff51af",
+                  "isHook": true,
+                  "skipped": false
+                }
+              ],
+              "tests": [
+                {
+                  "title": "Just testing flow for selenium in SB company",
+                  "fullTitle": " DefaultTest Just testing flow for selenium in SB company",
+                  "timedOut": false,
+                  "duration": 14206,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "await driver.manage().window().maximize();\nawait driver.get('https://softwarebrothers.co/');\nawait driver.findElement(By.linkText(\"Services\")).click();\nawait driver.sleep(2000);\nawait driver.wait(until.elementIsVisible(driver.findElement(By.xpath(\"//a[@aria-label= 'dismiss cookie message' and @role='button']\")))).click();\nawait driver.sleep(2000);\nawait driver.findElement(By.className((\"webdev\"))).click();\nawait driver.sleep(2000);\nconst title = await (await driver.findElement(By.xpath(\"//*[text()='Web Design and Development']\"))).getText();\nexpect(title.toUpperCase()).to.have.string('WEB DESIGN AND DEVELOPMENT');",
+                  "err": {},
+                  "uuid": "d5192b69-9307-4a6c-8406-57ec00c72046",
+                  "parentUUID": "69666b70-ab97-4308-8942-36bf74ff51af",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Just testing flow for selenium in SB company",
+                  "fullTitle": " DefaultTest Just testing flow for selenium in SB company",
+                  "timedOut": false,
+                  "duration": 8263,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "await driver.manage().window().maximize();\nawait driver.get('https://softwarebrothers.co/');\nawait driver.findElement(By.linkText(\"Services\")).click();\nawait driver.sleep(2000);\nawait driver.wait(until.elementIsVisible(driver.findElement(By.xpath(\"//a[@aria-label= 'dismiss cookie message' and @role='button']\")))).click();\nawait driver.sleep(2000);\nawait driver.findElement(By.className((\"webdev\"))).click();\nawait driver.sleep(2000);\nconst title = await (await driver.findElement(By.xpath(\"//*[text()='Web Design and Development']\"))).getText();\nexpect(title.toUpperCase()).to.have.string('WEB DESIGN AND DEVELOPMENT');",
+                  "err": {},
+                  "uuid": "1b9f09e2-6b5c-4200-90d7-ede1c0c77843",
+                  "parentUUID": "69666b70-ab97-4308-8942-36bf74ff51af",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "d5192b69-9307-4a6c-8406-57ec00c72046",
+                "1b9f09e2-6b5c-4200-90d7-ede1c0c77843"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 22469,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 30000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 30000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {},
+      "version": "4.1.0"
+    }
+  }
+}
