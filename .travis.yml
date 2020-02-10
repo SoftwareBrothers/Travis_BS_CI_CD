@@ -11,3 +11,11 @@ script:
 env:
   global:
     secure: iCcWDJEErmvCbg0PmdQbu8545GkM1jAaBB1TWzaYymURkisZcuCa6zgDKslEAXlMEuzJ9/pA5/qQ/lknMS7+PoOyRQZE6oicSCEg9yCqQbWgMii4zx8mP0Zw5EdjDyy6vEftOJMfcDYhuzTeX5vCuglFBFc0nNWN1QK+OosQ/oo+iV/p2x3JRBBzMZkuudAAuhjMHBiG789eSrtZaFuXAJ9YcW3Yq64e9PZtZasRQwviEODEsfl/R0KUu+SZv0nY1ZpYxhKt1tEBFCc2SeqXMOijn83PU6GwrJlhO4RoX4h6JPPh27yNe/PMId338TlOW+dvaRHQDuCttdPJwtXOVjT/2iCSYW8p+f0XsmPGKYbVnJQylc8W1g9r+BocSO6yGaETIdaQnPEIWI3quiBw4JX+qtj2YWkYBIG8tc4dFwGJ1zAveboqZPUDZxJJyH+5OGV0lWzhmLwRzyQANGatkXeQ1M2soCusk3IulmEBxlGwUEkSjn6GhzDEI/NFmjkNsksE4ccHfKNMsp1N25RHN4Q7eHYsVbY3B/4eb2D1/saK9sY0zfRKwj0/MnkEv/pgQFb0KteoneXEQxr4i3eST0ECGA7jbD2HUTFIkGxRpQ7t5zL4a3HqcFsDo3zqtkVL4TEZkpZYZnZ/Q3+yVMv3SC1zZaE/nP2O+Mi3N1BFkTo=
+
+    deploy:
+  provider: releases
+  api_key: "GITHUB OAUTH TOKEN"
+  file: "FILE TO UPLOAD"
+  skip_cleanup: true
+  on:
+    tags: true
