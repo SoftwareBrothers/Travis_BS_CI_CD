@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "browserstack-local": "^1.4.5",
     "chai": "^4.2.0",
     "selenium-webdriver": "^4.0.0-alpha.5"
   },
