@@ -15,7 +15,7 @@ env:
     deploy:
   provider: releases
   api_key: "GITHUB OAUTH TOKEN"
-  file: "FILE TO UPLOAD"
+  file: "FILE TO UPLOAD dupa"
   skip_cleanup: true
   on:
     tags: true
