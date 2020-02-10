@@ -4,8 +4,6 @@ node_js:
 addons:
   browserstack:
     username: januszjan1
+    access_key: BaajEcqJLxU8BBrz5Cuf
   script:
   - npm run test
-env:
-  global:
-    secure: IwKaVijlTS0HlSTGqkrjdCDN411PIPeZz8BozCjg8SA5uDY7vgMORovL4Cq+KU2txtt1/bh6MKXx2GEiI/O2JHRtGJA/ZWzYSRCuwqEjudpxL2hSLIdrH8VodJql3S8FNBxUznig01zJapd7CZccxk7yJTbVFTczbc4SICM9ANjm1p4QZrfMFm3+XMTd5xwYNbIGaKFVMRihQSFX26YgGNunXgelN4dLQO059FxeE8ssuRM52wryrFgdLmdalnyN7lTnHgz9y598KcVwAUC+c8qyncXOFsh90mXrTN1C9+iAk6Www7Ncy/jMCsN080fPHBEN7gsBmSUpGCWBL/x/B7SUjX2B7Uy3EUviWUMkNLYHd8HZHJ73DSJL9yQOKn2L5Hh0qBaakuwsiQXDSVgx9+ZO/AxP9QO2m80LM6fo2B0d3FxqsQb4Rro8tU+OOtYZcJ+SsjoGvYe2iWqvgaxGJd+hQOq9x1AC5gAExSQ/bYB0TlOuKffPEmnO4ISLIrSRAl3LxQdJ8++uBDC7H2mzzFbSCUFJaGGZlTW1x/CRdjmreQQkEPyQ3xSeQTHR3aQz2LLLnnLrKy/HxEYoGmOZr1noclQGaLL2CqkdH4aPrtw2awkf9suIheX2EVhtpQiIZ5RurqZjk5yJAdDuEtJ6zH/eXagJbPf70ITwYYg8Tz8=
