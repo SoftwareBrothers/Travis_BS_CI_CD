@@ -32,12 +32,12 @@ describe('DefaultTest', () => {
 
 
     beforeEach(async () => {
-        driver = new webdriver.Builder().
-        usingServer('http://hub-cloud.browserstack.com/wd/hub').
-        withCapabilities(capabilities).
-        build();
+        // driver = new webdriver.Builder().
+        // usingServer('http://hub-cloud.browserstack.com/wd/hub').
+        // withCapabilities(capabilities).
+        // build();
         //local testing
-        //   driver = await new Builder().forBrowser('chrome').build();
+        driver = await new Builder().forBrowser('chrome').build();
 
     })
 
